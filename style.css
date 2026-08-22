@@ -711,24 +711,7 @@ html {
 .btn {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.hero {
-    
-    color: white;
-}
 
-.hero-text h1 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-}
-.about {
-    background: #f7f7f7;
-}
-
-.about p {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
 .service-box {
     max-width: 1000px;
     margin: auto;
