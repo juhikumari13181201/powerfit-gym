@@ -1,0 +1,495 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: #111;
+
+    position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+header h2 span {
+    color: red;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero {
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+
+    background-image: url("gym.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero-text h1 span {
+    color: red;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+/* About Section */
+
+.about {
+    min-height: 400px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #181818;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about h2,
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.about h2 span,
+.services h2 span {
+    color: red;
+}
+
+.about-text p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    width: 220px;
+    height: 180px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-box h3 {
+    font-size: 55px;
+    color: red;
+}
+
+.about-box p {
+    color: white;
+}
+
+
+/* Services Section */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+    background: #111;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    width: 30%;
+    padding: 35px 25px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: red;
+}
+
+.service-card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: red;
+}
+/* Trainers */
+
+.trainers {
+    padding: 80px 8%;
+    text-align: center;
+    background: #181818;
+}
+
+.trainers h2,
+.membership h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.trainers h2 span,
+.membership h2 span {
+    color: red;
+}
+
+.trainer-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.trainer-card {
+    width: 30%;
+    background: #111;
+    padding-bottom: 25px;
+    transition: 0.3s;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.trainer-card h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.trainer-card p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Membership */
+
+.membership {
+    padding: 80px 8%;
+    text-align: center;
+    background: #111;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.plan-card {
+    width: 30%;
+    padding: 35px 20px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.plan-card h3 {
+    font-size: 22px;
+}
+
+.plan-card h4 {
+    color: red;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.plan-card p {
+    color: #bbb;
+    margin: 12px 0;
+}
+
+.plan-card button {
+    margin-top: 20px;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    border-color: red;
+}
+
+.popular {
+    border: 2px solid red;
+}
+/* Contact Section */
+
+.contact {
+    padding: 80px 8%;
+    background: #181818;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contact h2 span {
+    color: red;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    color: #bbb;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    background: #111;
+    border: 1px solid #444;
+    color: white;
+    outline: none;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: red;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    background: #0b0b0b;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer h2 span {
+    color: red;
+}
+
+footer p {
+    color: #777;
+}
+
+form select {
+    padding: 15px;
+    background: #111;
+    border: 1px solid #444;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+form select:focus {
+    border-color: red;
+}
+.whatsapp-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 15px 20px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    z-index: 2000;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 8%;
+}
+
+.footer-box {
+    width: 30%;
+}
+
+.footer-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-box h2 span {
+    color: red;
+}
+
+.footer-box h3 {
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-box a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.footer-box a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #777;
+}
+
+
+/* Mobile Footer */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+}
+/* Premium Card Effects */
+
+.service-card,
+.trainer-card,
+.plan-card {
+    transition: all 0.4s ease;
+}
+
+.service-card:hover,
+.trainer-card:hover,
+.plan-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.25);
+}
+button,
+.join-btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.join-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+.hero-text h1 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+    max-width: 550px;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
