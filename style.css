@@ -493,3 +493,19 @@ button:hover,
 section {
     scroll-margin-top: 80px;
 }
+/* Button Design */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff4d00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e63e00;
+    transform: scale(1.05);
+}
