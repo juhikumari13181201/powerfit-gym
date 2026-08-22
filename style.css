@@ -737,4 +737,53 @@ html {
 .service-card h3 {
     margin-top: 0;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+.service-card h3 {
+    color: #ff4d00;
+    margin-bottom: 12px;
+}
+
+.service-card:hover h3 {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #ff4d00;
+    box-shadow: 0 0 5px rgba(255, 77, 0, 0.3);
+}
+
+.contact button {
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    transform: translateY(-2px);
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
 
