@@ -720,3 +720,68 @@ html {
 .service-card h3 {
     margin-top: 0;
 }
+/* ===== PREMIUM GLOW EFFECT ===== */
+
+.service-card,
+.trainer-card,
+.plan-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.service-card:hover,
+.trainer-card:hover,
+.plan-card:hover {
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.35);
+}
+
+.plan-card:hover {
+    transform: translateY(-12px) scale(1.03);
+}
+
+.popular {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+}
+
+/* Hero Button */
+.hero .btn {
+    border-radius: 30px;
+    padding: 14px 32px;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Section Headings */
+section h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ===== PREMIUM SERVICE CARDS ===== */
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: red;
+    transition: 0.4s;
+}
+
+.service-card:hover::before {
+    left: 0;
+}
+
+.service-card h3 {
+    transition: 0.3s;
+}
+
+.service-card:hover h3 {
+    color: #ff4d00;
+    transform: scale(1.05);
+}
