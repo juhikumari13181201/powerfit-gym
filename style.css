@@ -852,3 +852,49 @@ section h2 {
     font-weight: bold;
     transform: rotate(45deg);
 }
+/* ===== PREMIUM CONTACT SECTION ===== */
+
+.contact-container {
+    align-items: center;
+}
+
+.contact-info {
+    background: #111;
+    padding: 30px;
+    border-left: 3px solid red;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    color: red;
+}
+
+form {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+form input,
+form textarea,
+form select {
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.25);
+}
+
+.contact button {
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
