@@ -898,3 +898,269 @@ form select:focus {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
 }
+/* ===== PREMIUM FOOTER ===== */
+
+footer {
+    border-top: 1px solid #222;
+}
+
+.footer-content {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-box a {
+    transition: 0.3s ease;
+}
+
+.footer-box a:hover {
+    padding-left: 6px;
+    color: red;
+}
+
+.footer-box h2,
+.footer-box h3 {
+    transition: 0.3s;
+}
+
+.footer-box:hover h2,
+.footer-box:hover h3 {
+    color: red;
+}
+
+.footer-bottom {
+    background: #080808;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+/* ===== PREMIUM WHATSAPP BUTTON ===== */
+
+.whatsapp-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.35);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+}
+/* ===== PREMIUM HERO EFFECT ===== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.75)
+    );
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 span {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+/* ===== PREMIUM ABOUT SECTION ===== */
+
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-text {
+    position: relative;
+    z-index: 1;
+}
+
+.about-box {
+    border-radius: 15px;
+    background: linear-gradient(145deg, #1c1c1c, #111);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.25);
+}
+
+.about-box h3 {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+/* ===== BETTER MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .service-container,
+    .trainer-container,
+    .plan-container,
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card,
+    .trainer-card,
+    .plan-card {
+        width: 90%;
+    }
+
+    .contact-info,
+    form {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box {
+        width: 90%;
+    }
+
+    .whatsapp-btn {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 16px;
+    }
+}
+/* ===== PREMIUM NAVBAR ===== */
+
+header,
+nav {
+    background: rgba(17, 17, 17, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.15);
+}
+
+nav a {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* ===== PREMIUM BUTTONS ===== */
+
+button,
+.btn,
+.join-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+button::before,
+.btn::before,
+.join-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+button:hover::before,
+.btn:hover::before,
+.join-btn:hover::before {
+    left: 100%;
+}
+
+button:hover,
+.btn:hover,
+.join-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+/* ===== SMOOTH SECTION EFFECT ===== */
+
+section {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: red;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+section h2 span {
+    text-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
+}
