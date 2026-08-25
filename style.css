@@ -785,3 +785,26 @@ section h2 {
     color: #ff4d00;
     transform: scale(1.05);
 }
+/* ===== PREMIUM TRAINER CARDS ===== */
+
+.trainer-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.trainer-card img {
+    transition: 0.5s ease;
+}
+
+.trainer-card:hover img {
+    transform: scale(1.08);
+}
+
+.trainer-card h3 {
+    transition: 0.3s;
+}
+
+.trainer-card:hover h3 {
+    color: red;
+}
