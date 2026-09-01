@@ -1160,6 +1160,195 @@ section h2::after {
     margin: 12px auto 0;
     border-radius: 10px;
 }
+/* ===== FINAL MOBILE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        height: auto;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 75vh;
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 15px auto 22px;
+        max-width: 95%;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    /* All Sections */
+    .about,
+    .services,
+    .trainers,
+    .membership,
+    .contact {
+        padding: 55px 15px;
+    }
+
+    /* Headings */
+    .about h2,
+    .services h2,
+    .trainers h2,
+    .membership h2,
+    .contact h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-box {
+        width: 90%;
+        max-width: 250px;
+        height: 170px;
+    }
+
+    .about-box h3 {
+        font-size: 45px;
+    }
+
+    /* Services */
+    .service-container,
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .service-card {
+        width: 92%;
+        max-width: 350px;
+        padding: 25px 20px;
+    }
+
+    /* Trainers */
+    .trainer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .trainer-card {
+        width: 92%;
+        max-width: 350px;
+    }
+
+    .trainer-card img {
+        height: 250px;
+    }
+
+    /* Membership */
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .plan-card {
+        width: 92%;
+        max-width: 350px;
+    }
+
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contact-info,
+    form {
+        width: 92%;
+        max-width: 400px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    /* WhatsApp */
+    .whatsapp-btn {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+        font-size: 13px;
+    }
+}
 
 section h2 span {
     text-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
