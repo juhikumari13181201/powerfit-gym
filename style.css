@@ -1004,75 +1004,7 @@ footer {
 .about-box h3 {
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
 }
-/* ===== BETTER MOBILE RESPONSIVE ===== */
 
-@media (max-width: 768px) {
-
-    header {
-        height: auto;
-        padding: 15px 5%;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    nav a {
-        margin-left: 0;
-        font-size: 14px;
-    }
-
-    .hero {
-        min-height: 75vh;
-        padding: 30px 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 36px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .service-container,
-    .trainer-container,
-    .plan-container,
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-card,
-    .trainer-card,
-    .plan-card {
-        width: 90%;
-    }
-
-    .contact-info,
-    form {
-        width: 90%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-box {
-        width: 90%;
-    }
-
-    .whatsapp-btn {
-        right: 15px;
-        bottom: 15px;
-        padding: 12px 16px;
-    }
-}
 /* ===== PREMIUM NAVBAR ===== */
 
 header,
@@ -1159,4 +1091,191 @@ section h2::after {
     background: red;
     margin: 12px auto 0;
     border-radius: 10px;
+}
+/* ===== FINAL MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+        height: auto;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    /* NAVIGATION */
+    nav {
+        width: 100%;
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 75vh;
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 15px auto 22px;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    /* SECTIONS */
+    .about,
+    .services,
+    .trainers,
+    .membership,
+    .contact {
+        padding: 55px 15px;
+    }
+
+    .about h2,
+    .services h2,
+    .trainers h2,
+    .membership h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-box {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    /* SERVICES */
+    .service-container,
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .service-card {
+        width: 92%;
+        max-width: 350px;
+    }
+
+    /* TRAINERS */
+    .trainer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .trainer-card {
+        width: 92%;
+        max-width: 350px;
+    }
+
+    .trainer-card img {
+        height: 250px;
+    }
+
+    /* MEMBERSHIP */
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .plan-card {
+        width: 92%;
+        max-width: 350px;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contact-info,
+    form {
+        width: 92%;
+        max-width: 400px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    /* WHATSAPP */
+    .whatsapp-btn {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+        font-size: 13px;
+    }
 }
