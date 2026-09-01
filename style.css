@@ -1115,11 +1115,11 @@ section h2::after {
     header h2 {
         font-size: 24px;
     }
-
-   /* NAVIGATION */
+    
+/* NAVIGATION */
 nav {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 5px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -1127,9 +1127,8 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 18px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1137,19 +1136,22 @@ nav ul {
 }
 
 nav li {
+    flex: 1;
     width: auto;
     text-align: center;
-    flex-shrink: 0;
+    min-width: 0;
 }
 
 nav a {
     display: block;
-    width: auto;
+    width: 100%;
     margin-left: 0;
-    padding: 6px 0;
-    font-size: 14px;
+    padding: 6px 2px;
+    font-size: 13px;
     white-space: nowrap;
+    box-sizing: border-box;
 }
+  
     /* HERO */
     .hero {
         min-height: 75vh;
